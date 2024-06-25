@@ -23,4 +23,17 @@ Events
 
 Retrieves a list of all events.
 - POST /api/events
+Creates a new event.
+- GET /api/events/{event}
+
+Retrieves details of a specific event.
+- PUT /api/events/{event}
+
+
+
+Authentication
+- POST /api/login
+
+LogOut.
+- POST /api/logout
 
