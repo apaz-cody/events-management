@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Event;
+use App\Models\Department;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class EventSeeder extends Seeder
+class DepartmentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,9 +16,9 @@ class EventSeeder extends Seeder
     {
         $users = User::all();
 
-        for ($i = 0; $i < 200; $i++) {
+        for ($i = 0; $i < 20; $i++) {
             $user = $users->random();
-               Event::factory()->create([
+               Department::factory()->create([
                 'user_id' => $user->id
             ]);
         }
